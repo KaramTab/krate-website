@@ -185,13 +185,13 @@ class Component extends DCLogic {
 
     // Choruses: paste each one into lyrics, with \n between lines, e.g. lyrics: 'First line\nSecond line'
     const songs = [
-      { title: 'Malaya', by: 'Suzzane', tag: 'Sing along', lyrics: '' },
-      { title: 'My Memory', by: 'Suzzane', tag: '', lyrics: '' },
-      { title: 'Something About You', by: 'Suzzane and Tom', tag: '', lyrics: '' },
-      { title: 'Jangan Cakap Pasal Tu', by: 'Pakcik Sam and Suzzane', tag: 'Sing along', lyrics: '' },
-      { title: 'Be With You', by: 'Suzzane and Tom', tag: '', lyrics: '' },
-      { title: 'Hey Sayang', by: 'Neo Lan', tag: 'Hum along at the end', lyrics: '' },
-      { title: 'Finale', by: 'Suzzane and Tom', tag: '', lyrics: '' }
+      { title: 'Malaya', by: 'Suzzane', tag: 'Sing along', lyrics: 'Malaya, Anak Malaya\nMalaya, satu suara\nMalaya, yang tercinta.\nBersama, satu Negara.' },
+      { title: 'My Memory', by: 'Suzzane', tag: '', lyrics: 'In my memory\nWe live in harmony\nWe could live our lives like how it used to be' },
+      { title: 'Something About You', by: 'Suzzane and Tom', tag: '', lyrics: 'I’m gonna walk away\nBut there’s something about you\nBut I’ll wait all day.\nFor reasons I can’t describe.' },
+      { title: 'Jangan Cakap Pasal Tu', by: 'Pakcik Sam and Suzzane', tag: 'Sing along', lyrics: 'Ohhhh, Jangan Cakap Pasal Tu,' },
+      { title: 'Be With You', by: 'Suzzane and Tom', tag: '', lyrics: 'You’re my sunlight\nMy hope through the night\nYou make me wanna stay alive\nTo be with you.' },
+      { title: 'Hey Sayang', by: 'Neo Lan', tag: 'Hum along at the end', lyrics: 'Hey sayang sayang,\nRasa lu tak tenang\nGua faham\nTapi ingat..' },
+      { title: 'I am here with you', by: 'Suzzane and Tom', tag: '', lyrics: 'You are here with me\nBreathe in and be\nThen you’ll see.' }
     ].map((x) => ({ ...x, hasTag: !!x.tag, hasLyrics: !!x.lyrics, noLyrics: !x.lyrics }));
 
     const spotted = s.spotted || {};
