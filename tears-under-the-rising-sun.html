@@ -77,9 +77,16 @@ img{display:block;max-width:100%}
 .pcard-bio{margin:14px 0 0;font-size:clamp(13px,1.02vw,14.5px);line-height:1.55;color:#D9DFEA}
 .pcard.crew .pcard-name{font-size:clamp(20px,1.7vw,25px)}
 .pcard.crew .pcard-bio{font-size:clamp(12px,.95vw,13.5px);line-height:1.5;margin-top:10px}
+.castgrid,.pcard-back{scrollbar-width:thin;scrollbar-color:rgba(233,199,127,.75) transparent}
+.castgrid::-webkit-scrollbar{height:3px}
+.castgrid::-webkit-scrollbar-track{background:rgba(233,199,127,.12);border-radius:3px;margin:0 clamp(20px,4.5vw,64px)}
+.castgrid::-webkit-scrollbar-thumb{background:rgba(233,199,127,.8);border-radius:3px}
+.pcard-back::-webkit-scrollbar{width:3px}
+.pcard-back::-webkit-scrollbar-track{background:transparent}
+.pcard-back::-webkit-scrollbar-thumb{background:rgba(233,199,127,.7);border-radius:3px}
 @media (prefers-reduced-motion:reduce){.pcard-front,.pcard-back,.pcard.is-open .pcard-back,.pcard.is-open .pcard-front{transition-duration:.01s;transition-delay:0s}}
 @media (max-width:700px){
-.castgrid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-left:calc(-1*clamp(20px,4.5vw,64px));margin-right:calc(-1*clamp(20px,4.5vw,64px));padding:6px clamp(20px,4.5vw,64px) 18px;-webkit-overflow-scrolling:touch}
+.castgrid{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-left:calc(-1*clamp(20px,4.5vw,64px));margin-right:calc(-1*clamp(20px,4.5vw,64px));padding:6px clamp(20px,4.5vw,64px) 22px;-webkit-overflow-scrolling:touch}
 .castgrid>figure{flex:0 0 76vw;max-width:340px;scroll-snap-align:center}
 .pcard-bio{font-size:14px}
 .pcard-long .pcard-bio{font-size:13px}
