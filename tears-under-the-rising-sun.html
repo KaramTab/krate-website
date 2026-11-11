@@ -77,7 +77,8 @@ img{display:block;max-width:100%}
 .pcard-bio{margin:14px 0 0;font-size:clamp(13px,1.02vw,14.5px);line-height:1.55;color:#D9DFEA}
 .pcard.crew .pcard-name{font-size:clamp(20px,1.7vw,25px)}
 .pcard.crew .pcard-bio{font-size:clamp(12px,.95vw,13.5px);line-height:1.5;margin-top:10px}
-.castgrid,.pcard-back{scrollbar-width:thin;scrollbar-color:rgba(233,199,127,.75) transparent}
+@supports not selector(::-webkit-scrollbar){.castgrid,.pcard-back{scrollbar-width:thin;scrollbar-color:rgba(233,199,127,.75) transparent}}
+.castgrid::-webkit-scrollbar-button,.pcard-back::-webkit-scrollbar-button{display:none;width:0;height:0}
 .castgrid::-webkit-scrollbar{height:3px}
 .castgrid::-webkit-scrollbar-track{background:rgba(233,199,127,.12);border-radius:3px;margin:0 clamp(20px,4.5vw,64px)}
 .castgrid::-webkit-scrollbar-thumb{background:rgba(233,199,127,.8);border-radius:3px}
